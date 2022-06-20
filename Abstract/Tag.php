@@ -9,7 +9,7 @@ abstract class Tag
     protected $tagText;
     protected $index;
 
-    final public function TagFormat($text)
+    public function TagFormat($text)
     {
         return substr_replace($this->tagText, $text, $this->index, 0);
     }
